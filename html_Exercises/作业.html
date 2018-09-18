@@ -1,0 +1,160 @@
+<html>
+<head>
+	<title>网上书城</title>
+</head>
+	<body>
+	<!--整个页面-->
+	<div>
+		<!--top-->
+		<div id="top">
+			<table width="100%">
+					<tr>
+						<td width="75%"><img src="images\logo.png"></td>
+						<td>
+							<img src="images\cart.gif">
+							<a href="#">购物车</a>
+							<a href="#">帮助中心</a>
+							<a href="#">我的账户</a>
+							<a href="#">新用户注册</a>
+						</td>
+					</tr>
+			</table>
+		</div>
+	
+		<div>
+			<table width="100%" bgcolor="green">
+				<tr align="center">
+					<td>
+						<a href="#"><font color="#ffffff">文学</font></a>&nbsp;&nbsp;<a href="#"><font color="#ffffff">生活</font></a>&nbsp;&nbsp;
+						<a href="#"><font color="#ffffff">计算机</font></a>&nbsp;&nbsp;<a href="#"><font color="#ffffff">外语</font></a>&nbsp;&nbsp;
+						<a href="#"><font color="#ffffff">经营</font></a>&nbsp;&nbsp;<a href="#"><font color="#ffffff">励志</font></a>&nbsp;&nbsp;
+						<a href="#"><font color="#ffffff">社科</font></a>&nbsp;&nbsp;<a href="#"><font color="#ffffff">学术</font></a>&nbsp;&nbsp;
+						<a href="#"><font color="#ffffff">少儿</font></a>&nbsp;&nbsp;<a href="#"><font color="#ffffff">艺术</font></a>&nbsp;&nbsp;
+						<a href="#"><font color="#ffffff">原版</font></a>&nbsp;&nbsp;<a href="#"><font color="#ffffff">科技</font></a>&nbsp;&nbsp;
+						<a href="#"><font color="#ffffff">考试</font></a>&nbsp;&nbsp;<a href="#"><font color="#ffffff">生活百科</font></a>&nbsp;&nbsp;
+						<a href="#"><font color="yellow">全部商品目录</font></a>&nbsp;&nbsp;
+					</td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="search" style="background-color:#B6B684">
+		<table width="100%">
+			<tr align="right">
+				<td>
+					<a href="file:///J:/DeskTop/html%E7%BB%83%E4%B9%A0/demo.html">返回</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+			</tr>
+		</table>
+		</div>
+		
+		<form name="myform" action="#" method="get"> <!--本页--><!--提交方式默认为get，将数据加在地址栏后面；post提交将数据封装在请求体中-->
+				<table align="center">
+					<tr>
+						<td>
+							姓名
+						</td>
+						<td>
+							<input type="text" name="user name">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							密码
+						</td>
+						<td>
+							<input type="password" name="password"><!--显示掩码-->
+						</td>
+					</tr>
+					<tr>
+						<td>
+							性别
+						</td>
+						<td>
+							<input type="radio" name="sex" value="male" checked="checked">男<!--若想让一组单选按钮互斥，name属性必须相同-->
+							<input type="radio" name="sex" value="female">女<!--checked属性表示默认选中-->  <!--value提交时用-->
+						</td>
+					</tr>
+					<tr>
+						<td>
+							爱好
+						</td>
+						<td>
+							<input type="checkbox" name="hobby" value="football" checked="checked">足球 <!--复选框-->
+							<input type="checkbox" name="hobby" value="basketball">篮球
+							<input type="checkbox" name="hobby" value="volleyball">排球
+						</td>
+					</tr>
+					<tr>
+						<td>
+							地址
+						</td>
+						<td>
+							<select name="city">
+								<option value="bj">北京</option>
+								<option value="sh">上海</option>
+								<option value="gz" selected="selected">广州</option>
+							</select>
+						</td>
+						<td>
+							<select name="district">
+								<option value="by">白云区</option>
+								<option value="th" selected="selected">天河区</option>
+								<option value="hd">花都区</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							上传图片
+						</td>
+						<td>
+							<input type="file" name="file">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							备注
+						</td>
+						<td>
+							<textarea name="ta" cols="30" rows="10">this is my text </textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>
+							<input type="button" name="btn" value="button"> <!--此value为button名称-->
+							<input type="submit" name="sub" value="submit"> <!--功能为提交到action地址-->
+							<input type="reset" name="reset" value="reset"> <!--功能为恢复初始值-->
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>
+							<input type="image" src="images/signup.gif" alt="图片的提示文字">
+							<input type="hidden" name="hied" value="***">
+						</td>
+					</tr>
+				</table>
+			</form>
+		
+		<div id="bottom">
+			<table width="100%" bgcolor="#EFEEDC">
+				<tr align="bottom">
+					<td rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images\logo.png"></td>
+					<td>CONTACT US</td>
+				</tr>
+				<tr>
+					<!--<td></td>-->
+					<td>copyright 2017 &copyright; BookStore All Rights RESERVED</td>
+				</tr>
+			</table>
+		</div>
+		
+		
+	</div>	
+	</body>
+</html>

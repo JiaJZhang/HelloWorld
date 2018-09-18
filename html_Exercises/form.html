@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<title>
+			表单
+		</title>
+		<body>
+			<form name="myform" action="#" method="get"> <!--本页--><!--提交方式默认为get，将数据加在地址栏后面；post提交将数据封装在请求体中-->
+				<table>
+					<tr>
+						<td>
+							姓名
+						</td>
+						<td>
+							<input type="text" name="user name">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							密码
+						</td>
+						<td>
+							<input type="password" name="password"><!--显示掩码-->
+						</td>
+					</tr>
+					<tr>
+						<td>
+							性别
+						</td>
+						<td>
+							<input type="radio" name="sex" value="male" checked="checked">男<!--若想让一组单选按钮互斥，name属性必须相同-->
+							<input type="radio" name="sex" value="female">女<!--checked属性表示默认选中-->  <!--value提交时用-->
+						</td>
+					</tr>
+					<tr>
+						<td>
+							爱好
+						</td>
+						<td>
+							<input type="checkbox" name="hobby" value="football" checked="checked">足球 <!--复选框-->
+							<input type="checkbox" name="hobby" value="basketball">篮球
+							<input type="checkbox" name="hobby" value="volleyball">排球
+						</td>
+					</tr>
+					<tr>
+						<td>
+							地址
+						</td>
+						<td>
+							<select name="city">
+								<option value="bj">北京</option>
+								<option value="sh">上海</option>
+								<option value="gz" selected="selected">广州</option>
+							</select>
+						</td>
+						<td>
+							<select name="district">
+								<option value="by">白云区</option>
+								<option value="th" selected="selected">天河区</option>
+								<option value="hd">花都区</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							上传图片
+						</td>
+						<td>
+							<input type="file" name="file">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							备注
+						</td>
+						<td>
+							<textarea name="ta" cols="30" rows="10">this is my text </textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>
+							<input type="button" name="btn" value="button"> <!--此value为button名称-->
+							<input type="submit" name="sub" value="submit"> <!--功能为提交到action地址-->
+							<input type="reset" name="reset" value="reset"> <!--功能为恢复初始值-->
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>
+							<input type="image" src="images/signup.gif" alt="图片的提示文字">
+							<input type="hidden" name="hied" value="***">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</body>
+	</head>
+</html>
